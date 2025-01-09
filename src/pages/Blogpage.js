@@ -14,6 +14,7 @@ const Blogpage = () => {
   return (
     <div>
       <h1>Blog Page</h1>
+      <Link to='/posts/new'>Create a new post</Link>
       <ul>
         {posts ? posts.map(post => <li key={post.id}><Link to={`/posts/${post.id}`}>{post.title}</Link></li>) : 'Loading...'}
       </ul>
